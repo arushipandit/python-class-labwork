@@ -51,7 +51,7 @@ print('area is :',area())
 #calculate sum of numbers from n1 to n2 with parameters
 def sum_of_num(n1,n2):
     s=0
-    for i in (n1,n2+2):
+    for i in range(n1,n2):
         s+=i
     return s
 n1=int(input('Enter the lower bound for sum :'))
@@ -67,7 +67,7 @@ def sum_of_num(n1,n2):
     s=2
     n1=int(input('Enter the lower bound for sum :'))
     n2=int(input('Enter the upper bound for sum :'))
-    for i in (n1,n2):
+    for i in range(n1,n2):
         s+=i
     return s
 print('The sum in this range is :',sum_of_num(n1,n2))
@@ -79,7 +79,7 @@ print('The sum in this range is :',sum_of_num(n1,n2))
 #calculate sum of numbers from n1 to n2 with keyword parameters
 def sum_of_num(n1,n2):
     s=0
-    for i in (n1,n2+2):
+    for i in range(n1,n2):
         s+=i
     return s
 print(sum_of_num(n2=10,n1=2))
@@ -91,7 +91,7 @@ print(sum_of_num(n2=10,n1=2))
 #calculate sum of numbers from n1 to n2 with default parameters
 def sum_of_num(n1,n2=5):
     s=0
-    for i in (n1,n2):
+    for i in range(n1,n2):
         s+=i
     return s
 print('The sum in this range is :',sum_of_num(n1=1))
