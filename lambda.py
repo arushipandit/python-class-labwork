@@ -81,4 +81,50 @@ func()
 
 
 
+# In[1]:
 
+
+#to multiply using lambda function
+multiply= lambda x,y:x*y
+print(multiply(3,4))
+
+
+# In[6]:
+
+
+#cube
+def cube(x):
+    cube=x*square(x)
+    return cube
+square= lambda x : x*x
+x=int(input('enter a number:'))
+print('cube is ',cube(x))
+
+
+# In[7]:
+
+
+#factorial using recurssion
+def fact(n):
+    if(n==1 or n==0):
+        return 1
+    else:
+        return n*fact(n-1)
+n=int(input('enter a number:'))
+print('factorial ',fact(n))
+
+
+# In[9]:
+
+
+#modules
+import sys
+print(sys.path)
+
+
+# In[11]:
+
+
+from math import *
+print(pi)
+print (sqrt(9))
